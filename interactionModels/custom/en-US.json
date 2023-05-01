@@ -1,0 +1,147 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "my ecommerce store",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "NumberIntent",
+          "slots": [
+            {
+              "name": "ordertype",
+              "type": "ordertype"
+            }
+          ],
+          "samples": [
+            "how many {ordertype} I have",
+            "how many orders are {ordertype}",
+            "how many items {ordertype}",
+            "to find me the number of {ordertype} orders",
+            "qwerty",
+            "heyya",
+            "how many {ordertype} orders I have"
+          ]
+        },
+        {
+          "name": "listintent",
+          "slots": [
+            {
+              "name": "ordertype",
+              "type": "ordertype"
+            }
+          ],
+          "samples": [
+            "which products {ordertype}",
+            "to give me a list of {ordertype} orders"
+          ]
+        },
+        {
+          "name": "itemname",
+          "slots": [
+            {
+              "name": "itemprop",
+              "type": "itemprop"
+            }
+          ],
+          "samples": [
+            "what my {itemprop} is",
+            "what is my {itemprop}",
+            "to find my {itemprop}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "fulfilled",
+                "synonyms": [
+                  "fulfillment",
+                  "complete",
+                  "completed"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "unfulfilled",
+                "synonyms": [
+                  "need to be shipped",
+                  "need to be fulfilled",
+                  "require fulfillment",
+                  "yet to be fulfilled",
+                  "not completed",
+                  "incomplete",
+                  "not fulfilled"
+                ]
+              }
+            }
+          ],
+          "name": "ordertype"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "worst selling item",
+                "synonyms": [
+                  "worst selling product",
+                  "worst selling merchandise",
+                  "worst seller",
+                  "worst product"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "best selling item",
+                "synonyms": [
+                  "best merchandise",
+                  "best product",
+                  "best selling merch",
+                  "best selling product",
+                  "best seller"
+                ]
+              }
+            }
+          ],
+          "name": "itemprop"
+        }
+      ]
+    }
+  },
+  "version": "8"
+}
